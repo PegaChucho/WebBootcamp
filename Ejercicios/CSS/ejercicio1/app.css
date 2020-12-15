@@ -1,0 +1,23 @@
+h2 {
+    color: orangered;
+}
+
+button {
+    color: salmon;
+    background-color: black;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+    background-color: rgb(255, 200, 200);
+}
+
+button {
+    color: black;
+    background-color: #505080;
+}
+
+body {
+    background-color: #ccbbaa;
+}

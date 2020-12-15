@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms demo</title>
+    <link rel="stylesheet" href="selectors.css">
+</head>
+
+<body>
+
+    <h1>Forms demo</h1>
+    <p>
+        Aqui vamos a poner mucho texto y a ocupar los spans: <br>
+        Lorem ipsum, <span class="tag">dolor</span> sit amet consectetur adipisicing elit. Tempore ab nisi unde ad ut
+        illum, eos
+        inventore saepe libero totam rerum voluptate asperiores perspiciatis et. Fugiat, magnam deleniti!
+        <span class="tag">Earum</span> , fuga.Rerum, neque alias? Quam dignissimos qui porro voluptatibus similique
+        expedita ad
+        illum? Corporis earum tempore commodi. <span class="tag">Voluptatem</span> voluptatum nihil quaerat amet ea
+        enim, molestiae, sint a,
+        maxime <span class="tag">laboriosam</span> totam officia.
+    </p>
+
+    <form action="/tacos" class="intro">
+        <!-- http://127.0.0.1:5500/tacos?username=Jes%C3%BAs&password=queso&color=%238ad089&date=2020-12-08-->
+
+        <p>
+            <label for="username">Enter a username:</label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+
+        <p>
+            <label for="password">Enter you password:</label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </p>
+
+        <p>
+            <label for="color">Pick your color:</label>
+            <input id="color" type="color" name="color">
+        </p>
+
+        <p>
+            <label for="number">Enter the number:</label>
+            <input id="number" type="number" name="number" min="0" max="100">
+        </p>
+
+        <p>
+            <button id="submit">Submit</button>
+        </p>
+
+
+    </form>
+
+    <hr>
+    <h2>Hijack search</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel, enim saepe explicabo quo quasi
+        consectetur, quam non soluta ea quae exercitationem atque. Ipsum natus excepturi alias? Repellendus, debitis
+        laborum?
+    </p>
+    <form action="https://www.google.com/search" class="secondary">
+        <input type="text" name="q" placeholder="Google search">
+        <button>Search</button>
+    </form>
+
+    <form action="https://www.youtube.com/results" class="secondary">
+        <input type="text" name="search_query" placeholder="Youtube search">
+        <button>Search</button>
+    </form>
+
+    <form action="https://www.udemy.com/courses/search/" class="secondary">
+        <input type="text" name="q" placeholder="Udemy courses search">
+        <button>Search</button>
+    </form>
+    <hr>
+
+    <h2>More inputs!</h2>
+
+
+    <form action="/cats" class="secondary">
+
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree</label>
+
+        <p>
+            <label for="M">M</label>
+            <input type="radio" name="size" id="M" value="M">
+
+            <label for="L">L</label>
+            <input type="radio" name="size" id="L" value="L">
+
+            <label for="XL">XL</label>
+            <input type="radio" name="size" id="XL" value="XL">
+        </p>
+
+        <p>
+            <label for="meal">Please select an entree</label>
+            <select name="meal" id="meal">
+
+                <option value="" selected>--Select an option--</option>
+                <option value="Fish">Fish</option>
+                <option value="Eggs">Eggs</option>
+                <option value="Chilaquiles">Chilaquiles</option>
+                <option value="Steak">Steak</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="cheese">Amount of cheese (kg):</label>
+            <input type="range" name="cheese_level" id="cheese" min="0" max="100" step="10" value="10">
+        </p>
+
+        <p>
+            <label for="">Any special request?</label>
+            <textarea name="request" id="request" cols="50" rows="10" placeholder="Type your message here"></textarea>
+        </p>
+
+        <button type="submit" id="submit">Submit</button>
+        <hr>
+
+        <h2>Validations Demo</h2>
+        <form action="/dummy" class="secondary">
+
+            <label for="first_name">Insert your first name:</label>
+            <input type="text" name="first_name" id="first_name">
+
+            <p>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" minlength="5" maxlength="15" required>
+            </p>
+
+            <p>
+                <label for="email">E-m@il</label>
+                <input type="email" required name="email" id="email">
+                <label for="url">Insert a url</label>
+                <input type="url" required name="url" id="url">
+            </p>
+
+
+            <button id="submit">Submit</button>
+
+        </form>
+
+    </form>
+
+    <footer>
+        <br>
+        Gracias por visitar <a href="">chuchopedia</a>.
+        <ul>
+            <li><a href="about.html">Contacto</a></li>
+            <li><a href="about.html">Acerca de</a></li>
+            <li><a href="http://www.gatitos.com">Gatitos</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+
+</html>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+/* universal selector */
+* {
+    background-color: papayawhip;
+}
+
+
+h1,
+h2 {
+    color: orangered;
+}
+
+button {
+    font-size: 30px;
+    background-color: #fbc4ab;
+}
+
+/* id selector */
+#submit {
+    background-color: #d88c9a;
+    font-weight: bolder;
+}
+
+form {
+    color: orangered;
+    font-weight: bold;
+}
+
+/* class selectors */
+.tag {
+    background-color: #f7a399;
+}
+
+/* descendent selectors */
+.secondary input {
+    background-color: palegoldenrod;
+}
+
+/* adyacent selector */
+input+button {
+    background-color: firebrick;
+}
+
+/* Adyacent selector */
+h2+p {
+    color: grey;
+}
+
+/* direct child */
+footer>a {
+    color: red;
+}
+
+/* attribute selector */
+input[type="password"] {
+    color: green;
+}
+
+a[href*="gatitos"] {
+    color: cyan;
+}
+
+/* pseudo class */
+button:hover {
+    background-color: pink;
+}
+
+footer a:hover {
+    color: magenta;
+}
+
+button:active {
+    background-color: gray;
+}
+
+form:nth-last-of-type(2n) {
+    background-color: paleturquoise;
+}
+
+/* pseudo elements */
+h2::first-letter {
+    font-size: xx-large;
+    color: black;
+}
+
+h1+p::selection {
+    background-color: lightblue;
+}
+
+/* Inheritance
+input, button {
+    color: inherit;
+} */
