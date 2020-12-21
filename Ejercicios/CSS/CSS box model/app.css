@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background-color: lavenderblush;
+}
+
+div {
+    width: 200px;
+    height: 300px;
+    background-color: #e9c46a;
+}
+
+h1 {
+    /* background-color: #f4a261; */
+    padding: 30px;
+    /* padding:  30px 30px 30px; */
+}
+
+#one {
+    background-color: #e76f51;
+    border-width: 2.5px;
+    border-color: black;
+    border-style: solid;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#two {
+    background-color: #2a9d8f;
+    border-color: #e76f51;
+    border-width: 3px;
+    border-style: inset;
+    box-sizing: border-box;
+}
+
+#three {
+    background-color: #264653;
+    border: 3px dashed #2a9d8f;
+    box-sizing: border-box;
+}
